@@ -1,3 +1,5 @@
+#ifndef GRID
+#define GRID
 #include <iostream>
 #include <windows.h>
 #include <time.h>
@@ -144,41 +146,43 @@ void create_R_Penotomio(){
 }
 };
 
-int main(){
-    srand(time(0));
-    Grid g;
-    g.create_R_Penotomio();
-    // Grid g2(4 ,4);
-    // g = g2;
-    //int count = 0;
-    while(true){
-        g.printGrid();
-        Sleep(1000);
-        system("cls");
-        g.Scan();
-        Sleep(1000);
-    }
-    // g.printGrid();
-    // Sleep(1000);
-    // system("cls");
-    // g.Scan();
-    // Sleep(1000);
-    // g.printGrid();
-    // Sleep(1000);
-    // system("cls");
-    // g.Scan();
-    // Sleep(1000);
-    // g.printGrid();
+// int main(){
+//     srand(time(0));
+//     Grid g;
+//     g.create_R_Penotomio();
+//     // Grid g2(4 ,4);
+//     // g = g2;
+//     //int count = 0;
+//     while(true){
+//         g.printGrid();
+//         Sleep(1000);
+//         system("cls");
+//         g.Scan();
+//         Sleep(1000);
+//     }
+//     // g.printGrid();
+//     // Sleep(1000);
+//     // system("cls");
+//     // g.Scan();
+//     // Sleep(1000);
+//     // g.printGrid();
+//     // Sleep(1000);
+//     // system("cls");
+//     // g.Scan();
+//     // Sleep(1000);
+//     // g.printGrid();
     
-        //printf("\x1B[31mTexting\033[0m\t\t");
-        //printf("\x1B[32m\4\033[0m\t\t");
-        //cout<<a;
-//   // you can loop k higher to see more color choices
-//   for(int k = 1; k < 255; k++)
-//   {
-//     // pick the colorattribute k you want
-//     SetConsoleTextAttribute(hConsole, k);
-//     cout << k << " I want to be nice today!" << endl;
-//   }
-    return 0;
-}
+//         //printf("\x1B[31mTexting\033[0m\t\t");
+//         //printf("\x1B[32m\4\033[0m\t\t");
+//         //cout<<a;
+// //   // you can loop k higher to see more color choices
+// //   for(int k = 1; k < 255; k++)
+// //   {
+// //     // pick the colorattribute k you want
+// //     SetConsoleTextAttribute(hConsole, k);
+// //     cout << k << " I want to be nice today!" << endl;
+// //   }
+//     return 0;
+// }
+
+#endif
