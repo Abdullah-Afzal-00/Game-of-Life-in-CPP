@@ -11,26 +11,28 @@ int main(){
     hmp.print();
     hmp.Rules();
     do{
-        if(choice < 0 or choice > 2) printf("\x1B[31mEnter the Valid Choice \033[0m\n");
+        if(choice < 0 or choice > 3) printf("\x1B[31mEnter the Valid Choice \033[0m\n");
         hmp.playMenu();
         cout<<"Enter Choice : ";
         cin>>choice;
-    }while(choice < 0 or choice > 2 );
+    }while(choice < 0 or choice > 3 );
 
-    if(choice == 1){
-
-    }
-    else if(choice == 2){
+    if(choice == 2){
         g.create_R_Penotomio();
     }
+    else if(choice == 3){
+        system("cls");
+        g.customInput();
+    }
 
-    while(true){
+    while(!g.AllDead()){
         g.printGrid();
         Sleep(1000);
         system("cls");
         g.Scan();
         //Sleep(1000);
     }
+    printf("\x1B[93mAll Cells are Dead \033[0m\n");
     
     return 0;
 }

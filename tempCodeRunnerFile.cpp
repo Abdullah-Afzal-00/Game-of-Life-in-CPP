@@ -1,14 +1,1 @@
-    // cout<<"   GGGGGGGGGGGGGG\n";
-    // cout<<"  GG            GG\n";
-    // cout<<" GG              GG\n";
-    // cout<<"GG        AAAAA \n";
-    // cout<<"GG       A     A\n";
-    // cout<<"GG       AAAAAAA\n";
-    // cout<<"GG       A     A\n";
-    // cout<<"GG       A     \n";
-    // cout<<"GG\n";
-    // cout<<"GG\n";
-    // cout<<"GG              GGGGGGG\n";
-    // cout<<"GG              GG   GG\n";
-    // cout<<" GG            GG    GG\n";
-    // cout<<"  GGGGGGGGGGGGGG\n";
+ g.printGrid();

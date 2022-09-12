@@ -48,8 +48,8 @@ void print(){
 }
 void Rules(){
     system("cls");
-    printf("\x1B[34mRULES : \033[0m\n");
-    printf("\x1B[92mFor each generation of the game, a cell's status in the next generation is determined by a set of rules. These simple rules are as follows:\033[0m\n\n");
+    printf("\x1B[92mRULES : \033[0m\n");
+    printf("\x1B[35mFor each generation of the game, a cell's status in the next generation is determined by a set of rules. These simple rules are as follows:\033[0m\n\n");
     printf("\x1B[91m\4 \033[0m");
     cout<<"If the cell is alive, then it stays alive if it has either 2 or 3 live neighbors\n";
     printf("\x1B[91m\4 \033[0m");
@@ -62,6 +62,8 @@ void playMenu(){
     cout<<"Do you want to start with random Cells Alive on Grid\n\n"; 
     printf("\x1B[33m2- \033[0m");
     cout<<"Do you want to start with R_Penotomio Pattern\n\n"; 
+    printf("\x1B[33m3- \033[0m");
+    cout<<"Do you want to start with Custom Pattern\n\n"; 
 }
 };
 // int main(){
